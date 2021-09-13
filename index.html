@@ -2,12 +2,15 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Louise Akira Nieva || Web Portfolio</title>
+	<title>Nieva's Portfolio || Home Page</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
 	<!-- Boostrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384B0P5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+1" crossorigin="anonymous">
@@ -15,49 +18,81 @@
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
+
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolio-nav">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="portfolio-nav">
-			<ul class="navbar-nav mx-auto">
+		<a id="nameko" href="PUT HTML HERE" class="nav-link">LOUISE AKIRA NIEVA</a>
+		<div class="collapse navbar-collapse" style="background-color: #343a40" id="portfolio-nav">
+			<!-- NEEDS NEW HTML for certs start-->
+			<ul class="navbar-nav">
+			    <li role="separator" class="divider"></li>
 				<li class="nav-item">
-					<a href="#landing" class="nav-link">Home</a>
+					<a href="PUT HTML HERE" class="nav-link" style="color: #c7a8ff">WEBINARS</a>
 				</li>
+				 <li role="separator" class="smoldiv"></li>
 				<li class="nav-item">
-					<a href="#gallery" class="nav-link">Gallery</a>
+					<a href="PUT HTML HERE" class="nav-link" style="color: #c7a8ff">TRAININGS</a>
 				</li>
+				 <li role="separator" class="smoldiv"></li>
+				<li class="nav-item">
+					<a href="PUT HTML HERE" class="nav-link" style="color: #c7a8ff">MY WORKS</a>
+				</li>
+			</ul>
+			<!-- end -->
 	</div>
 	</nav>
+
 	<div class="container-fluid">
 		<section id="landing" class="jumbotron mt-5 text-center bg-transparent">
-			<h1>Louise Akira Nieva</h1>
-			<h2>Hello! I'm Akira and I hope I graduate from college already.</h2>
-			<img src="./images/Vanoss Logo.png" class="img-fluid"/>
+
+	<div id="slider">
+		<figure>
+			<img src="./images/pup0a.png">
+			<img src="./images/pup0a.png">
+			<img src="#">
+			<img src="#">
+			<img src="#">
+		</figure>
+	</div>
+
 		</section>
 		<!-- end of landing -->
-
-		<section id="gallery" class="bg-dark text-center">
-			<div class="tools">
-				<h2>Languages I Speak</h2>
-					<ul>
-						<li>HTML</li>
-						<li>css</li>
-					</ul>
-			</div>
-			<div class="tools">
-				<h2>Tools I Use</h2>
-					<ul>
-						<li>Git Bash/Terminal</li>
-						<li>Sublime Text</li>
-						<li>Github</li>
-						<li>Google Chrome</li>
-					</ul>
-			</div>
-		</section>
-		<!-- end of gallery -->
-
+	
+<section id="contact" class="contact-section">
+  <div class="contact-links">
+    <a
+      href="https://facebook.com/nievalouki"
+      target="_blank"
+      class="btn contactdet"
+      ><i class="fab fa-facebook-square"></i> Facebook</a
+    >
+    <a
+      id="profile-link"
+      href="https://github.com/dedkid"
+      target="_blank"
+      class="btn contactdet"
+      ><i class="fab fa-github"></i> GitHub</a
+    >
+    <a href="mailto:nievaakira@gmail.com" class="btn contactdet"
+      ><i class="fas fa-envelope"></i> Mail</a
+    >
+    <a href="tel:997-07-97" class="btn contactdet"
+      ><i class="fas fa-phone"></i> Contact</a
+    >
+    <footer class="foot">
+  <p>
+    Louise Akira S. Nieva of DICT 1-1 | 
+    <a href="https://www.pup.edu.ph" target="_blank" style="color: white; text-decoration: none; font-family: Serif;"
+      >Polytechnic University of the Philippines&copy; Institute of Technology 2021
+    </a>
+  </p>
+</footer>
+  </div>
+</section>
+  <!-- end of contact -->
 	</div>
 
 	<!-- Bootstrap JS Dependencies -->
