@@ -41,6 +41,10 @@ img {
 	color: white;
 }
 
+.navbar {
+	height:50px;
+}
+
 ul {
 	list-style: none;
 	padding: 0;
