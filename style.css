@@ -5,51 +5,40 @@
 	font-family: 'Roboto', sans-serif;
 */
 
-/*
-nav-items= Elements in navbar
-navbar-nav= Navbar without the button/toggler for the collapsed
-navbar-toggler= Navbar button, when collapsed
-@media, and everything in it= when the pixel size/statement is True
-tools= The boxes below with the list of texts inside ("tools i use")*/
-
 * {
 	/*Default Font*/
-	font-family: 'Noto Sans JP', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 h1,h2 {
 	/*Targeted Font Change*/
 	font-family: 'Montserrat', sans-serif;
-	color: white;
 }
 
-body {
-	background-color: #121212;
+img {
+	/*Image Resize*/
+	height: 150px;
+	width: 150px;
 }
 
-#landing {/*
-	height: 500vh;*/
+#landing {
+	height: 80vh;
 	/*center the content, (image, heading, and paragraph) horizontally and
 	vertically using flexbox*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	min-height: calc(100vh - 30px);
 }
 
-#nameko {
-	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 5px;
-	transition: 1s;
-	transform-origin: inside;
+#gallery {
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
 	color: white;
-	font-weight: bolder;
-}
-
-#nameko:hover {
-	letter-spacing: 7px;
-	color: #deccff;
 }
 
 ul {
@@ -58,226 +47,16 @@ ul {
 }
 
 h2 {
-	color: hsl(261, 100%, 80%);
+	color: #007bff;
 }
-
-.navbar-nav {
-	background-color: #343a40;
-}
-
-.nav-item {
-	background-color: #343a40;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 80%;
-	font-weight: bold;
-	letter-spacing: 2px;
-	text-align: center;
-	transition: 0.4s;
-	display: inline-block;
-	position: relative;
-}
-
-.nav-item:after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	transform: scaleX(0);
-	height: 2px;
-	bottom: 0;
-	left: 0;
-	background-color: dimgrey;
-	transform-origin: inside;
-	transition: transform 0.6s ease-out;
-}
-
-.nav-item:hover{
-	font-size: 90%;
-}
-
-.nav-item:hover:after{
-	transform: scaleX(1);
-	transform-origin: inside;
-}
-
-.navbar-toggler {
-	transition: 0.6s;
-}
-
-.navbar-toggler:hover {
-	background-color: #222222;
-}
-
-.divider {
-    height: 4px;
-    margin: 9px 0;
-    overflow: hidden;
-    background-color: #deccff;
-}
-
-/*Elements' position changes, when the width increases*/
-@media (min-width: 992px) {
-	.nav-item {
-		margin-right: 40px;
-		margin-left: 5px;
-	}
-	#nameko {
-		margin-right: 60px;
-		letter-spacing: 5px;
-	}
-	.contactdet:hover{
-	font-size: 110%;
-}
-	.foot {
-		font-size: 40%;
-	}
-}
-
-/*Elements' position changes, when the width DECREASES*/
-@media (max-width: 991px) {
-	.navbar {
-		height:120px;
-	}
-	.navbar-toggler {
-		height: 100px;
-		width: 110px;
-	}
-	.navbar-collapse {
-		height: 270px;
-	}
-	.nav-item {
-		font-size: 35px;
-		font-weight: bold;
-		letter-spacing: 8px;
-	}
-	.nav-item:hover {
-		font-size: 240%;
-		background-color: #121212;
-		transform-origin: inside;
-	}
-	.smoldiv {
-    height: 0.5px;
-    margin: 9px 0;
-    overflow: hidden;
-    background-color: #deccff;
-}
-
-.foot{
-	font-size: 110%;
-}
-.contactdet {
-	font-size: 27px;
-	transition: 0.4s;
-}
-
-.contactdet:hover{
-	font-size: 30px;
-}
-
-#contact {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-	#slider figure img{
-	padding-top: 100px;
-}
-	#nameko {
-		font-size: 40px;
-	}
-}
-
 
 .tools {
 	padding: 25px;
 	border: 5px solid #f2f2f2;
 	margin: 20px;
-	height: 345px;
+	height: 200px;
 	width: 75%;
 }
-/*DIFFERENT CSS SOURCE*/
-
-#contact {
-	height: 21vh;
-	display: flex;
-	flex-direction: column;
-	align-items: left;
-	justify-content: center;
-	/*border-radius: 6px;*/
-	border-top: solid 2px white;
-	position: relative;
- }
-
-.contactdet {
-	color: white;
-	transition: 0.2s;
-	margin-right: 10px;
-	margin-top: 10px;
-	align-items: left;
-}
-
-.contactdet:hover {
-	color: #deccff;
-}
-
-.foot {
-	color: white;
-	
-	opacity: 50%;
-	margin-left: 10px;
-}
-
-/*END OF DIFFERENT CSS SOURCE*/
-
-
-#slider {
-	overflow: hidden;
-}
-
-#slider figure {
-	position: relative;
-	width: 500%;
-	margin: 0;
-	left: 0;
-	animation: 20s slider infinite;
-}
-
-#slider figure img {
-	width: 20%;
-	float: left;
-}
-
-@keyframes slider {
-	0% {
-		left: 0;
-	}
-	20% {
-		left: 0;
-	}
-	25% {
-		left: -100%;
-	}
-	45% {
-		left: -100%;
-	}
-	50% {
-		left: -200%;
-	}
-	70% {
-		left: -200%;
-	}
-	75% {
-		left: -300%;
-	}
-	95% {
-		left: -300%;
-	}
-	100% {
-		left: -400%;
-	}
-}
-
 
 html {
 	scroll-behavior: smooth;
